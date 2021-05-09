@@ -2,7 +2,7 @@ const DEV = process.env.NODE_ENV !== "production";
 
 const warnings = new Set();
 
-function warn(condition, ...rest) {
+function warnOnce(condition, ...rest) {
   if (DEV && condition) {
     const key = rest.join("-");
 
@@ -15,4 +15,4 @@ function warn(condition, ...rest) {
   }
 }
 
-module.exports = warn;
+module.exports = warnOnce;

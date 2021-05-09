@@ -1,1 +1,1 @@
-export default function warn(message?: any, ...optionalParams: any[]): void;
+export default function warnOnce(condition: boolean, message?: any, ...optionalParams: any[]): void;
