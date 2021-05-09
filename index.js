@@ -4,7 +4,7 @@ const warnings = new Set();
 
 function warnOnce(condition, ...rest) {
   if (DEV && condition) {
-    const key = rest.join("-");
+    const key = rest.join(" ");
 
     if (warnings.has(key)) {
       return;
