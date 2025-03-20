@@ -20,6 +20,10 @@ const warnOnce = require('warn-once');
 // ...
 
 warnOnce(someCondition, 'This is a warning message');
+
+// additional message strings as parameters
+// You can add 'n' number of arguments.
+warnOnce(someCondition, 'message 1', 'message 2', 'message 3')
 ```
 
 You can call `warnOnce` multiple times, but if the warning was printed already, it'll not be printed again.
